@@ -1,0 +1,585 @@
+***** Stack frame *****
+  Function: &__OpenCL_vector_copy_kernel,
+  Program counter (offset in code section): 0x15c, pragma  "AMD RTI", "ARGSTART:__OpenCL_vector_copy_kernel";
+
+  ***** Registers *****
+    $d0: 0, 0, 0.000000, 0x0000000000000000
+    $d1: 0, 0, 0.000000, 0x0000000000000000
+    $d2: 0, 0, 0.000000, 0x0000000000000000
+    $s0: 0, 0, 0.000000, 0x00000000
+  ***** ********* *****
+
+  ***** Function arguments *****
+  ***** ******** ********* *****
+
+  ***** Argument scope *****
+  ***** ******** ***** *****
+
+  ***** Kernel Argument *****
+		u64 %__aqlwrap_pointer[1] (0x000000000000002c) 
+		u64 %__global_offset_0[1] (0x0000000000000004) 
+		u64 %__global_offset_1[1] (0x000000000000000c) 
+		u64 %__global_offset_2[1] (0x0000000000000014) 
+		u64 %__printf_buffer[1] (0x000000000000001c) 
+		u64 %__vqueue_pointer[1] (0x0000000000000024) 
+		u64 %in[1] (0x0000000000000034) 
+		u64 %out[1] (0x000000000000003c) 
+  ***** ****** ******** ****
+
+  ***** Variables *****
+  ***** ********* *****
+
+***** Backtrace *****
+#1 &__OpenCL_vector_copy_kernel ()
+***** ********* *****
+
+***** ***** ***** *****
+
+WorkItem: 0
+Executing: workitemabsid_u32	$s0, 0;
+***** Stack frame *****
+  Function: &__OpenCL_vector_copy_kernel,
+  Program counter (offset in code section): 0x260, cvt_u64_u32	$d0, $s0;
+
+  ***** Registers *****
+    $d0: 0, 0, 0.000000, 0x0000000000000000
+    $d1: 0, 0, 0.000000, 0x0000000000000000
+    $d2: 0, 0, 0.000000, 0x0000000000000000
+    $s0: 0, 0, 0.000000, 0x00000000
+  ***** ********* *****
+
+  ***** Function arguments *****
+  ***** ******** ********* *****
+
+  ***** Argument scope *****
+  ***** ******** ***** *****
+
+  ***** Kernel Argument *****
+		u64 %__aqlwrap_pointer[1] (0x000000000000002c) 
+		u64 %__global_offset_0[1] (0x0000000000000004) 
+		u64 %__global_offset_1[1] (0x000000000000000c) 
+		u64 %__global_offset_2[1] (0x0000000000000014) 
+		u64 %__printf_buffer[1] (0x000000000000001c) 
+		u64 %__vqueue_pointer[1] (0x0000000000000024) 
+		u64 %in[1] (0x0000000000000034) 
+		u64 %out[1] (0x000000000000003c) 
+  ***** ****** ******** ****
+
+  ***** Variables *****
+  ***** ********* *****
+
+***** Backtrace *****
+#1 &__OpenCL_vector_copy_kernel ()
+***** ********* *****
+
+***** ***** ***** *****
+
+WorkItem: 0
+Executing: cvt_u64_u32	$d0, $s0;
+***** Stack frame *****
+  Function: &__OpenCL_vector_copy_kernel,
+  Program counter (offset in code section): 0x270, ld_kernarg_align(8)_width(all)_u64	$d1, [%__global_offset_0];
+
+  ***** Registers *****
+    $d0: 0, 0, 0.000000, 0x0000000000000000
+    $d1: 0, 0, 0.000000, 0x0000000000000000
+    $d2: 0, 0, 0.000000, 0x0000000000000000
+    $s0: 0, 0, 0.000000, 0x00000000
+  ***** ********* *****
+
+  ***** Function arguments *****
+  ***** ******** ********* *****
+
+  ***** Argument scope *****
+  ***** ******** ***** *****
+
+  ***** Kernel Argument *****
+		u64 %__aqlwrap_pointer[1] (0x000000000000002c) 
+		u64 %__global_offset_0[1] (0x0000000000000004) 
+		u64 %__global_offset_1[1] (0x000000000000000c) 
+		u64 %__global_offset_2[1] (0x0000000000000014) 
+		u64 %__printf_buffer[1] (0x000000000000001c) 
+		u64 %__vqueue_pointer[1] (0x0000000000000024) 
+		u64 %in[1] (0x0000000000000034) 
+		u64 %out[1] (0x000000000000003c) 
+  ***** ****** ******** ****
+
+  ***** Variables *****
+  ***** ********* *****
+
+***** Backtrace *****
+#1 &__OpenCL_vector_copy_kernel ()
+***** ********* *****
+
+***** ***** ***** *****
+
+WorkItem: 0
+Executing: ld_kernarg_align(8)_width(all)_u64	$d1, [%__global_offset_0];
+***** Stack frame *****
+  Function: &__OpenCL_vector_copy_kernel,
+  Program counter (offset in code section): 0x284, add_u64	$d0, $d0, $d1;
+
+  ***** Registers *****
+    $d0: 0, 0, 0.000000, 0x0000000000000000
+    $d1: 0, 0, 0.000000, 0x0000000000000000
+    $d2: 0, 0, 0.000000, 0x0000000000000000
+    $s0: 0, 0, 0.000000, 0x00000000
+  ***** ********* *****
+
+  ***** Function arguments *****
+  ***** ******** ********* *****
+
+  ***** Argument scope *****
+  ***** ******** ***** *****
+
+  ***** Kernel Argument *****
+		u64 %__aqlwrap_pointer[1] (0x000000000000002c) 
+		u64 %__global_offset_0[1] (0x0000000000000004) 
+		u64 %__global_offset_1[1] (0x000000000000000c) 
+		u64 %__global_offset_2[1] (0x0000000000000014) 
+		u64 %__printf_buffer[1] (0x000000000000001c) 
+		u64 %__vqueue_pointer[1] (0x0000000000000024) 
+		u64 %in[1] (0x0000000000000034) 
+		u64 %out[1] (0x000000000000003c) 
+  ***** ****** ******** ****
+
+  ***** Variables *****
+  ***** ********* *****
+
+***** Backtrace *****
+#1 &__OpenCL_vector_copy_kernel ()
+***** ********* *****
+
+***** ***** ***** *****
+
+WorkItem: 0
+Executing: add_u64	$d0, $d0, $d1;
+***** Stack frame *****
+  Function: &__OpenCL_vector_copy_kernel,
+  Program counter (offset in code section): 0x290, shl_u64	$d0, $d0, 32;
+
+  ***** Registers *****
+    $d0: 0, 0, 0.000000, 0x0000000000000000
+    $d1: 0, 0, 0.000000, 0x0000000000000000
+    $d2: 0, 0, 0.000000, 0x0000000000000000
+    $s0: 0, 0, 0.000000, 0x00000000
+  ***** ********* *****
+
+  ***** Function arguments *****
+  ***** ******** ********* *****
+
+  ***** Argument scope *****
+  ***** ******** ***** *****
+
+  ***** Kernel Argument *****
+		u64 %__aqlwrap_pointer[1] (0x000000000000002c) 
+		u64 %__global_offset_0[1] (0x0000000000000004) 
+		u64 %__global_offset_1[1] (0x000000000000000c) 
+		u64 %__global_offset_2[1] (0x0000000000000014) 
+		u64 %__printf_buffer[1] (0x000000000000001c) 
+		u64 %__vqueue_pointer[1] (0x0000000000000024) 
+		u64 %in[1] (0x0000000000000034) 
+		u64 %out[1] (0x000000000000003c) 
+  ***** ****** ******** ****
+
+  ***** Variables *****
+  ***** ********* *****
+
+***** Backtrace *****
+#1 &__OpenCL_vector_copy_kernel ()
+***** ********* *****
+
+***** ***** ***** *****
+
+WorkItem: 0
+Executing: shl_u64	$d0, $d0, 32;
+***** Stack frame *****
+  Function: &__OpenCL_vector_copy_kernel,
+  Program counter (offset in code section): 0x29c, shr_s64	$d0, $d0, 32;
+
+  ***** Registers *****
+    $d0: 0, 0, 0.000000, 0x0000000000000000
+    $d1: 0, 0, 0.000000, 0x0000000000000000
+    $d2: 0, 0, 0.000000, 0x0000000000000000
+    $s0: 0, 0, 0.000000, 0x00000000
+  ***** ********* *****
+
+  ***** Function arguments *****
+  ***** ******** ********* *****
+
+  ***** Argument scope *****
+  ***** ******** ***** *****
+
+  ***** Kernel Argument *****
+		u64 %__aqlwrap_pointer[1] (0x000000000000002c) 
+		u64 %__global_offset_0[1] (0x0000000000000004) 
+		u64 %__global_offset_1[1] (0x000000000000000c) 
+		u64 %__global_offset_2[1] (0x0000000000000014) 
+		u64 %__printf_buffer[1] (0x000000000000001c) 
+		u64 %__vqueue_pointer[1] (0x0000000000000024) 
+		u64 %in[1] (0x0000000000000034) 
+		u64 %out[1] (0x000000000000003c) 
+  ***** ****** ******** ****
+
+  ***** Variables *****
+  ***** ********* *****
+
+***** Backtrace *****
+#1 &__OpenCL_vector_copy_kernel ()
+***** ********* *****
+
+***** ***** ***** *****
+
+WorkItem: 0
+Executing: shr_s64	$d0, $d0, 32;
+***** Stack frame *****
+  Function: &__OpenCL_vector_copy_kernel,
+  Program counter (offset in code section): 0x2a8, shl_u64	$d0, $d0, 2;
+
+  ***** Registers *****
+    $d0: 0, 0, 0.000000, 0x0000000000000000
+    $d1: 0, 0, 0.000000, 0x0000000000000000
+    $d2: 0, 0, 0.000000, 0x0000000000000000
+    $s0: 0, 0, 0.000000, 0x00000000
+  ***** ********* *****
+
+  ***** Function arguments *****
+  ***** ******** ********* *****
+
+  ***** Argument scope *****
+  ***** ******** ***** *****
+
+  ***** Kernel Argument *****
+		u64 %__aqlwrap_pointer[1] (0x000000000000002c) 
+		u64 %__global_offset_0[1] (0x0000000000000004) 
+		u64 %__global_offset_1[1] (0x000000000000000c) 
+		u64 %__global_offset_2[1] (0x0000000000000014) 
+		u64 %__printf_buffer[1] (0x000000000000001c) 
+		u64 %__vqueue_pointer[1] (0x0000000000000024) 
+		u64 %in[1] (0x0000000000000034) 
+		u64 %out[1] (0x000000000000003c) 
+  ***** ****** ******** ****
+
+  ***** Variables *****
+  ***** ********* *****
+
+***** Backtrace *****
+#1 &__OpenCL_vector_copy_kernel ()
+***** ********* *****
+
+***** ***** ***** *****
+
+WorkItem: 0
+Executing: shl_u64	$d0, $d0, 2;
+***** Stack frame *****
+  Function: &__OpenCL_vector_copy_kernel,
+  Program counter (offset in code section): 0x2b4, ld_kernarg_align(8)_width(all)_u64	$d1, [%out];
+
+  ***** Registers *****
+    $d0: 0, 0, 0.000000, 0x0000000000000000
+    $d1: 0, 0, 0.000000, 0x0000000000000000
+    $d2: 0, 0, 0.000000, 0x0000000000000000
+    $s0: 0, 0, 0.000000, 0x00000000
+  ***** ********* *****
+
+  ***** Function arguments *****
+  ***** ******** ********* *****
+
+  ***** Argument scope *****
+  ***** ******** ***** *****
+
+  ***** Kernel Argument *****
+		u64 %__aqlwrap_pointer[1] (0x000000000000002c) 
+		u64 %__global_offset_0[1] (0x0000000000000004) 
+		u64 %__global_offset_1[1] (0x000000000000000c) 
+		u64 %__global_offset_2[1] (0x0000000000000014) 
+		u64 %__printf_buffer[1] (0x000000000000001c) 
+		u64 %__vqueue_pointer[1] (0x0000000000000024) 
+		u64 %in[1] (0x0000000000000034) 
+		u64 %out[1] (0x000000000000003c) 
+  ***** ****** ******** ****
+
+  ***** Variables *****
+  ***** ********* *****
+
+***** Backtrace *****
+#1 &__OpenCL_vector_copy_kernel ()
+***** ********* *****
+
+***** ***** ***** *****
+
+WorkItem: 0
+Executing: ld_kernarg_align(8)_width(all)_u64	$d1, [%out];
+***** Stack frame *****
+  Function: &__OpenCL_vector_copy_kernel,
+  Program counter (offset in code section): 0x2c8, add_u64	$d1, $d1, $d0;
+
+  ***** Registers *****
+    $d0: 0, 0, 0.000000, 0x0000000000000000
+    $d1: 135217784, 135217784, 0.000000, 0x00000000080f4278
+    $d2: 0, 0, 0.000000, 0x0000000000000000
+    $s0: 0, 0, 0.000000, 0x00000000
+  ***** ********* *****
+
+  ***** Function arguments *****
+  ***** ******** ********* *****
+
+  ***** Argument scope *****
+  ***** ******** ***** *****
+
+  ***** Kernel Argument *****
+		u64 %__aqlwrap_pointer[1] (0x000000000000002c) 
+		u64 %__global_offset_0[1] (0x0000000000000004) 
+		u64 %__global_offset_1[1] (0x000000000000000c) 
+		u64 %__global_offset_2[1] (0x0000000000000014) 
+		u64 %__printf_buffer[1] (0x000000000000001c) 
+		u64 %__vqueue_pointer[1] (0x0000000000000024) 
+		u64 %in[1] (0x0000000000000034) 
+		u64 %out[1] (0x000000000000003c) 
+  ***** ****** ******** ****
+
+  ***** Variables *****
+  ***** ********* *****
+
+***** Backtrace *****
+#1 &__OpenCL_vector_copy_kernel ()
+***** ********* *****
+
+***** ***** ***** *****
+
+WorkItem: 0
+Executing: add_u64	$d1, $d1, $d0;
+***** Stack frame *****
+  Function: &__OpenCL_vector_copy_kernel,
+  Program counter (offset in code section): 0x2d4, ld_kernarg_align(8)_width(all)_u64	$d2, [%in];
+
+  ***** Registers *****
+    $d0: 0, 0, 0.000000, 0x0000000000000000
+    $d1: 135217784, 135217784, 0.000000, 0x00000000080f4278
+    $d2: 0, 0, 0.000000, 0x0000000000000000
+    $s0: 0, 0, 0.000000, 0x00000000
+  ***** ********* *****
+
+  ***** Function arguments *****
+  ***** ******** ********* *****
+
+  ***** Argument scope *****
+  ***** ******** ***** *****
+
+  ***** Kernel Argument *****
+		u64 %__aqlwrap_pointer[1] (0x000000000000002c) 
+		u64 %__global_offset_0[1] (0x0000000000000004) 
+		u64 %__global_offset_1[1] (0x000000000000000c) 
+		u64 %__global_offset_2[1] (0x0000000000000014) 
+		u64 %__printf_buffer[1] (0x000000000000001c) 
+		u64 %__vqueue_pointer[1] (0x0000000000000024) 
+		u64 %in[1] (0x0000000000000034) 
+		u64 %out[1] (0x000000000000003c) 
+  ***** ****** ******** ****
+
+  ***** Variables *****
+  ***** ********* *****
+
+***** Backtrace *****
+#1 &__OpenCL_vector_copy_kernel ()
+***** ********* *****
+
+***** ***** ***** *****
+
+WorkItem: 0
+Executing: ld_kernarg_align(8)_width(all)_u64	$d2, [%in];
+***** Stack frame *****
+  Function: &__OpenCL_vector_copy_kernel,
+  Program counter (offset in code section): 0x2e8, add_u64	$d0, $d2, $d0;
+
+  ***** Registers *****
+    $d0: 0, 0, 0.000000, 0x0000000000000000
+    $d1: 135217784, 135217784, 0.000000, 0x00000000080f4278
+    $d2: 135213680, 135213680, 0.000000, 0x00000000080f3270
+    $s0: 0, 0, 0.000000, 0x00000000
+  ***** ********* *****
+
+  ***** Function arguments *****
+  ***** ******** ********* *****
+
+  ***** Argument scope *****
+  ***** ******** ***** *****
+
+  ***** Kernel Argument *****
+		u64 %__aqlwrap_pointer[1] (0x000000000000002c) 
+		u64 %__global_offset_0[1] (0x0000000000000004) 
+		u64 %__global_offset_1[1] (0x000000000000000c) 
+		u64 %__global_offset_2[1] (0x0000000000000014) 
+		u64 %__printf_buffer[1] (0x000000000000001c) 
+		u64 %__vqueue_pointer[1] (0x0000000000000024) 
+		u64 %in[1] (0x0000000000000034) 
+		u64 %out[1] (0x000000000000003c) 
+  ***** ****** ******** ****
+
+  ***** Variables *****
+  ***** ********* *****
+
+***** Backtrace *****
+#1 &__OpenCL_vector_copy_kernel ()
+***** ********* *****
+
+***** ***** ***** *****
+
+WorkItem: 0
+Executing: add_u64	$d0, $d2, $d0;
+***** Stack frame *****
+  Function: &__OpenCL_vector_copy_kernel,
+  Program counter (offset in code section): 0x2f4, ld_global_align(4)_u32	$s0, [$d0];
+
+  ***** Registers *****
+    $d0: 135213680, 135213680, 0.000000, 0x00000000080f3270
+    $d1: 135217784, 135217784, 0.000000, 0x00000000080f4278
+    $d2: 135213680, 135213680, 0.000000, 0x00000000080f3270
+    $s0: 0, 0, 0.000000, 0x00000000
+  ***** ********* *****
+
+  ***** Function arguments *****
+  ***** ******** ********* *****
+
+  ***** Argument scope *****
+  ***** ******** ***** *****
+
+  ***** Kernel Argument *****
+		u64 %__aqlwrap_pointer[1] (0x000000000000002c) 
+		u64 %__global_offset_0[1] (0x0000000000000004) 
+		u64 %__global_offset_1[1] (0x000000000000000c) 
+		u64 %__global_offset_2[1] (0x0000000000000014) 
+		u64 %__printf_buffer[1] (0x000000000000001c) 
+		u64 %__vqueue_pointer[1] (0x0000000000000024) 
+		u64 %in[1] (0x0000000000000034) 
+		u64 %out[1] (0x000000000000003c) 
+  ***** ****** ******** ****
+
+  ***** Variables *****
+  ***** ********* *****
+
+***** Backtrace *****
+#1 &__OpenCL_vector_copy_kernel ()
+***** ********* *****
+
+***** ***** ***** *****
+
+WorkItem: 0
+Executing: ld_global_align(4)_u32	$s0, [$d0];
+***** Stack frame *****
+  Function: &__OpenCL_vector_copy_kernel,
+  Program counter (offset in code section): 0x308, st_global_align(4)_u32	$s0, [$d1];
+
+  ***** Registers *****
+    $d0: 135213680, 135213680, 0.000000, 0x00000000080f3270
+    $d1: 135217784, 135217784, 0.000000, 0x00000000080f4278
+    $d2: 135213680, 135213680, 0.000000, 0x00000000080f3270
+    $s0: 16843009, 16843009, 0.000000, 0x01010101
+  ***** ********* *****
+
+  ***** Function arguments *****
+  ***** ******** ********* *****
+
+  ***** Argument scope *****
+  ***** ******** ***** *****
+
+  ***** Kernel Argument *****
+		u64 %__aqlwrap_pointer[1] (0x000000000000002c) 
+		u64 %__global_offset_0[1] (0x0000000000000004) 
+		u64 %__global_offset_1[1] (0x000000000000000c) 
+		u64 %__global_offset_2[1] (0x0000000000000014) 
+		u64 %__printf_buffer[1] (0x000000000000001c) 
+		u64 %__vqueue_pointer[1] (0x0000000000000024) 
+		u64 %in[1] (0x0000000000000034) 
+		u64 %out[1] (0x000000000000003c) 
+  ***** ****** ******** ****
+
+  ***** Variables *****
+  ***** ********* *****
+
+***** Backtrace *****
+#1 &__OpenCL_vector_copy_kernel ()
+***** ********* *****
+
+***** ***** ***** *****
+
+WorkItem: 0
+Executing: st_global_align(4)_u32	$s0, [$d1];
+***** Stack frame *****
+  Function: &__OpenCL_vector_copy_kernel,
+  Program counter (offset in code section): 0x31c, ret;
+
+  ***** Registers *****
+    $d0: 135213680, 135213680, 0.000000, 0x00000000080f3270
+    $d1: 135217784, 135217784, 0.000000, 0x00000000080f4278
+    $d2: 135213680, 135213680, 0.000000, 0x00000000080f3270
+    $s0: 16843009, 16843009, 0.000000, 0x01010101
+  ***** ********* *****
+
+  ***** Function arguments *****
+  ***** ******** ********* *****
+
+  ***** Argument scope *****
+  ***** ******** ***** *****
+
+  ***** Kernel Argument *****
+		u64 %__aqlwrap_pointer[1] (0x000000000000002c) 
+		u64 %__global_offset_0[1] (0x0000000000000004) 
+		u64 %__global_offset_1[1] (0x000000000000000c) 
+		u64 %__global_offset_2[1] (0x0000000000000014) 
+		u64 %__printf_buffer[1] (0x000000000000001c) 
+		u64 %__vqueue_pointer[1] (0x0000000000000024) 
+		u64 %in[1] (0x0000000000000034) 
+		u64 %out[1] (0x000000000000003c) 
+  ***** ****** ******** ****
+
+  ***** Variables *****
+  ***** ********* *****
+
+***** Backtrace *****
+#1 &__OpenCL_vector_copy_kernel ()
+***** ********* *****
+
+***** ***** ***** *****
+
+WorkItem: 0
+Executing: ret;
+Callee_frame: 
+***** Stack frame *****
+  Function: &__OpenCL_vector_copy_kernel,
+  Program counter (offset in code section): 0x31c, ret;
+
+  ***** Registers *****
+    $d0: 135213680, 135213680, 0.000000, 0x00000000080f3270
+    $d1: 135217784, 135217784, 0.000000, 0x00000000080f4278
+    $d2: 135213680, 135213680, 0.000000, 0x00000000080f3270
+    $s0: 16843009, 16843009, 0.000000, 0x01010101
+  ***** ********* *****
+
+  ***** Function arguments *****
+  ***** ******** ********* *****
+
+  ***** Argument scope *****
+  ***** ******** ***** *****
+
+  ***** Kernel Argument *****
+		u64 %__aqlwrap_pointer[1] (0x000000000000002c) 
+		u64 %__global_offset_0[1] (0x0000000000000004) 
+		u64 %__global_offset_1[1] (0x000000000000000c) 
+		u64 %__global_offset_2[1] (0x0000000000000014) 
+		u64 %__printf_buffer[1] (0x000000000000001c) 
+		u64 %__vqueue_pointer[1] (0x0000000000000024) 
+		u64 %in[1] (0x0000000000000034) 
+		u64 %out[1] (0x000000000000003c) 
+  ***** ****** ******** ****
+
+  ***** Variables *****
+  ***** ********* *****
+
+***** Backtrace *****
+#1 &__OpenCL_vector_copy_kernel ()
+***** ********* *****
+
+***** ***** ***** *****
+
+Kernel execution finished, reducing completion signal from 1 to 0
