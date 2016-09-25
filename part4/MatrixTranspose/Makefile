@@ -15,18 +15,28 @@ ir: MatrixTranspose_Kernels.cl
 asm: MatrixTranspose_Kernels.ll
 	@-echo "Backend: LLVM IR file (.ll) to Assembly (.s)"
 	@-llc $(LLC_PAR) $< 
+	@-pretobin.sh MatrixTranspose_Kernels.s 
 
 asm_is_pre_ra: MatrixTranspose_Kernels.ll
 	@-echo "Backend: LLVM IR file (.ll) to Assembly (.s), pre-RA fast instruction scheduler"
 	@-llc $(LLC_PAR) $< --pre-RA-sched=fast -o MatrixTranspose_Kernels_pre_ra.s
+	@-pretobin.sh MatrixTranspose_Kernels_pre_ra.s 
 
 asm_is_post_ra: MatrixTranspose_Kernels.ll
 	@-echo "Backend: LLVM IR file (.ll) to Assembly (.s), post-RA si instruction scheduler"
 	@-llc $(LLC_PAR) $< --misched=si -o MatrixTranspose_Kernels_post_ra.s
+	@-pretobin.sh MatrixTranspose_Kernels_post_ra.s 
 
-asm_is_post_ra: MatrixTranspose_Kernels.ll
+diff_is:
+	@-vim -O MatrixTranspose_Kernels.s MatrixTranspose_Kernels_pre_ra.s MatrixTranspose_Kernels_post_ra.s
+
+asm_regalloc: MatrixTranspose_Kernels.ll
 	@-echo "Backend: LLVM IR file (.ll) to Assembly (.s), fast register allocator"
-	@-llc $(LLC_PAR) $< -regalloc=fast -o MatrixTranspose_Kernels_regalloc.s
+	@-llc $(LLC_PAR) $< -regalloc=basic -o MatrixTranspose_Kernels_regalloc.s
+	@-pretobin.sh MatrixTranspose_Kernels_regalloc.s 
+
+diff_ra:
+	@-vim -O MatrixTranspose_Kernels.s MatrixTranspose_Kernels_regalloc.s
 
 bin: MatrixTranspose_Kernels.s
 	@-echo "Assembler: Assembly file (.s) to kernel binary (.bin)"
