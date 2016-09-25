@@ -16,6 +16,18 @@ asm: MatrixTranspose_Kernels.ll
 	@-echo "Backend: LLVM IR file (.ll) to Assembly (.s)"
 	@-llc $(LLC_PAR) $< 
 
+asm_is_pre_ra: MatrixTranspose_Kernels.ll
+	@-echo "Backend: LLVM IR file (.ll) to Assembly (.s), pre-RA fast instruction scheduler"
+	@-llc $(LLC_PAR) $< --pre-RA-sched=fast -o MatrixTranspose_Kernels_pre_ra.s
+
+asm_is_post_ra: MatrixTranspose_Kernels.ll
+	@-echo "Backend: LLVM IR file (.ll) to Assembly (.s), post-RA si instruction scheduler"
+	@-llc $(LLC_PAR) $< --misched=si -o MatrixTranspose_Kernels_post_ra.s
+
+asm_is_post_ra: MatrixTranspose_Kernels.ll
+	@-echo "Backend: LLVM IR file (.ll) to Assembly (.s), fast register allocator"
+	@-llc $(LLC_PAR) $< -regalloc=fast -o MatrixTranspose_Kernels_regalloc.s
+
 bin: MatrixTranspose_Kernels.s
 	@-echo "Assembler: Assembly file (.s) to kernel binary (.bin)"
 	@-pretobin.sh $<
